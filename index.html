@@ -6,11 +6,11 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>NASDAQ Scout PRO — 24/04/2026 20:26</title>
+<title>NASDAQ Scout PRO — 24/04/2026 20:41</title>
 <script>
 /* Auto-refresh: detecta nueva versión en GitHub Pages sin Ctrl+F5 */
 (function(){
-  var BUILD='1777055206';
+  var BUILD='1777056108';
   /* 1) Guarda el build del HTML que acabamos de cargar */
   var prev=localStorage.getItem('ns_build');
   if(prev!==null && prev!==BUILD){
@@ -122,6 +122,19 @@ header{position:relative;z-index:10;display:flex;align-items:center;justify-cont
 .tp-reasons li{font-family:'Fira Code',monospace;font-size:9px;color:var(--text);padding:3px 0 3px 14px;position:relative;line-height:1.5;border-bottom:1px solid rgba(255,255,255,.03)}
 .tp-reasons li::before{content:'▶';position:absolute;left:0;color:#ffd60a;font-size:7px;top:5px}
 .tp-warning{margin-top:10px;padding:6px 10px;background:rgba(255,112,67,.08);border:1px solid rgba(255,112,67,.2);border-radius:5px;font-family:'Fira Code',monospace;font-size:8.5px;color:#ff7043;line-height:1.5}
+.tp-hist-btn{background:rgba(255,214,10,.12);border:1px solid rgba(255,214,10,.3);color:#ffd60a;font-family:'Fira Code',monospace;font-size:9px;font-weight:700;padding:5px 10px;border-radius:5px;cursor:pointer;white-space:nowrap;transition:background .2s}
+.tp-hist-btn:hover{background:rgba(255,214,10,.22)}
+
+/* BACKTEST TOP PICKS */
+.bt-empty{font-family:'Fira Code',monospace;font-size:10px;color:#4a5a70;padding:8px 0}
+.bt-grid{display:flex;flex-direction:column;gap:8px;max-height:420px;overflow-y:auto}
+.bt-card{display:flex;align-items:center;gap:14px;padding:8px 10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,214,10,.1);border-radius:7px}
+.bt-card-left{flex:1;min-width:0}
+.bt-sym{font-family:'Fira Code',monospace;font-size:13px;font-weight:700;color:#ffd60a}
+.bt-name{font-family:'Fira Code',monospace;font-size:8px;color:#8b9bb4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.bt-meta{font-family:'Fira Code',monospace;font-size:8px;color:#4a5a70;margin-top:3px}
+.bt-ret{margin-top:5px}
+.bt-chart{flex-shrink:0}
 
 /* MAX PAIN BANNER */
 .mp-banner{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:14px;margin:14px 18px 0;padding:12px 16px;border:1px solid;border-radius:8px;flex-wrap:wrap}
@@ -294,11 +307,11 @@ footer{position:relative;z-index:5;text-align:center;padding:20px;font-family:'F
 <header>
   <div class="brand">
     <h1>NASDAQ Scout PRO</h1>
-    <p>Top 10 señales alcistas por universo · 24/04/2026 20:26</p>
+    <p>Top 10 señales alcistas por universo · 24/04/2026 20:41</p>
   </div>
   <div class="meta-right">
     13 universos escaneados<br>
-    Actualizado: 24/04/2026 20:26<br>
+    Actualizado: 24/04/2026 20:41<br>
     Yahoo Finance + Groq LLaMA
   </div>
   <a class="excel-dl-btn" href="https://raw.githubusercontent.com/vcostas3/NasdaqScoutPRO/main/HistorialScores.xlsx" download="HistorialScores.xlsx" title="Descargar historial de todas las ejecuciones"><span class="excel-dl-icon">⬇</span><span class="excel-dl-txt">Historial<br><small>Excel</small></span></a>
@@ -316,12 +329,12 @@ footer{position:relative;z-index:5;text-align:center;padding:20px;font-family:'F
     <div class="spy-icon">📈</div>
     <div>
       <div class="spy-label" style="color:#00e5a0">📈 S&P 500 EN TENDENCIA ALCISTA</div>
-      <div class="spy-detail">SPY $713.39  (+0.70% hoy)  ·  20d: +10.6%  ·  Precio por encima de EMA20 y EMA50  ·  El mercado acompaña — contexto favorable para compras.</div>
+      <div class="spy-detail">SPY $713.57  (+0.72% hoy)  ·  20d: +10.6%  ·  Precio por encima de EMA20 y EMA50  ·  El mercado acompaña — contexto favorable para compras.</div>
     </div>
   </div>
   <div class="spy-right">
-    <div class="spy-price" style="color:#00e5a0">SPY $713.39</div>
-    <div class="spy-sub">+0.70% hoy · +10.6% últimos 20d</div>
+    <div class="spy-price" style="color:#00e5a0">SPY $713.57</div>
+    <div class="spy-sub">+0.72% hoy · +10.6% últimos 20d</div>
   </div>
 </div>
 
@@ -330,7 +343,7 @@ footer{position:relative;z-index:5;text-align:center;padding:20px;font-family:'F
 
 <div class="mi-banner">
   <div class="mi-title">🌍 MERCADO GLOBAL</div>
-  <div class="mi-tiles"><div class="mi-tile" data-tip="Bono del Tesoro EEUU a 10 años — referencia global de tipos de interés. Subida rápida = presión sobre valoraciones de tech/growth (descuenta flujos futuros a mayor tasa). Bajada = viento de cola para acciones de crecimiento. Zona normal: 3.5-4.5%."><div class="mi-label">🏛 BONO 10Y</div><div class="mi-val" style="color:#8b9bb4">4.31% <span class="mi-chg">-0.011%</span></div><div class="mi-sub" style="color:#8b9bb4">→ Estable</div></div><div class="mi-tile" data-tip="Índice del dólar EEUU (DXY) — mide la fortaleza del dólar vs cesta de divisas (€, £, ¥...). DXY subiendo = dólar fuerte = presión sobre materias primas y multinacionales. DXY bajando = dólar débil = viento de cola para exportadoras, commodities y mercados emergentes."><div class="mi-label">💵 DXY (DÓLAR)</div><div class="mi-val" style="color:#00e5a0">98.57 <span class="mi-chg">-0.23%</span></div><div class="mi-sub" style="color:#00e5a0">↓ Bajando</div></div><div class="mi-tile" data-tip="Ratio Puts/Calls del SPY (opciones del vencimiento más próximo). >1.2 Miedo: más puts que calls — inversores se cubren contra caídas (señal contrarian alcista). 0.8-1.2 Neutral: equilibrio. <0.8 Euforia: más calls que puts — exceso de optimismo (señal contrarian bajista)."><div class="mi-label">🎯 PUT/CALL (SPY)</div><div class="mi-val" style="color:#8b9bb4">0.99</div><div class="mi-sub" style="color:#8b9bb4">Neutral</div></div><div class="mi-tile" data-tip="Amplitud de mercado: % de acciones del scan que cotizan por encima de su EMA200 (media de 200 días). ≥70% Rally amplio: la mayoría del mercado en tendencia alcista — condiciones favorables. 50-70% Rally moderado: solo una parte del mercado lidera. <50% Rally estrecho o distribución: pocos valores tiran del índice — señal de alerta."><div class="mi-label">📊 AMPLITUD EMA200</div><div class="mi-val" style="color:#ffd60a">53% <span class="mi-chg">(17/32)</span></div><div class="mi-sub" style="color:#ffd60a">⚠ Rally moderado</div></div></div>
+  <div class="mi-tiles"><div class="mi-tile" data-tip="Bono del Tesoro EEUU a 10 años — referencia global de tipos de interés. Subida rápida = presión sobre valoraciones de tech/growth (descuenta flujos futuros a mayor tasa). Bajada = viento de cola para acciones de crecimiento. Zona normal: 3.5-4.5%."><div class="mi-label">🏛 BONO 10Y</div><div class="mi-val" style="color:#8b9bb4">4.31% <span class="mi-chg">-0.009%</span></div><div class="mi-sub" style="color:#8b9bb4">→ Estable</div></div><div class="mi-tile" data-tip="Índice del dólar EEUU (DXY) — mide la fortaleza del dólar vs cesta de divisas (€, £, ¥...). DXY subiendo = dólar fuerte = presión sobre materias primas y multinacionales. DXY bajando = dólar débil = viento de cola para exportadoras, commodities y mercados emergentes."><div class="mi-label">💵 DXY (DÓLAR)</div><div class="mi-val" style="color:#00e5a0">98.56 <span class="mi-chg">-0.24%</span></div><div class="mi-sub" style="color:#00e5a0">↓ Bajando</div></div><div class="mi-tile" data-tip="Ratio Puts/Calls del SPY (opciones del vencimiento más próximo). >1.2 Miedo: más puts que calls — inversores se cubren contra caídas (señal contrarian alcista). 0.8-1.2 Neutral: equilibrio. <0.8 Euforia: más calls que puts — exceso de optimismo (señal contrarian bajista)."><div class="mi-label">🎯 PUT/CALL (SPY)</div><div class="mi-val" style="color:#8b9bb4">1.01</div><div class="mi-sub" style="color:#8b9bb4">Neutral</div></div><div class="mi-tile" data-tip="Amplitud de mercado: % de acciones del scan que cotizan por encima de su EMA200 (media de 200 días). ≥70% Rally amplio: la mayoría del mercado en tendencia alcista — condiciones favorables. 50-70% Rally moderado: solo una parte del mercado lidera. <50% Rally estrecho o distribución: pocos valores tiran del índice — señal de alerta."><div class="mi-label">📊 AMPLITUD EMA200</div><div class="mi-val" style="color:#ffd60a">53% <span class="mi-chg">(17/32)</span></div><div class="mi-sub" style="color:#ffd60a">⚠ Rally moderado</div></div></div>
   <div class="mi-news-strip"><a href="https://247wallst.com/investing/2026/04/24/buy-hold-or-sell-voo-at-650/" target="_blank" rel="noopener" class="mi-news-item"><span class="mi-news-src">24/7 Wall St.</span><span class="mi-news-title">Buy, Hold, or Sell VOO at $650?</span><span class="mi-news-date"></span></a><a href="https://247wallst.com/investing/2026/04/24/the-vix-dips-below-19-heres-what-that-means-for-your-portfolio/" target="_blank" rel="noopener" class="mi-news-item"><span class="mi-news-src">24/7 Wall St.</span><span class="mi-news-title">The VIX Dips Below 19. Here’s What That Means for Your Portfolio.</span><span class="mi-news-date"></span></a><a href="https://247wallst.com/investing/2026/04/24/sp-500-climbs-as-intel-posts-best-quarter-in-years-and-oil-retreats/" target="_blank" rel="noopener" class="mi-news-item"><span class="mi-news-src">24/7 Wall St.</span><span class="mi-news-title">S&P 500 Climbs as Intel Posts Best Quarter in Years and Oil Retreats</span><span class="mi-news-date"></span></a><a href="https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-equity-130802590.html" target="_blank" rel="noopener" class="mi-news-item"><span class="mi-news-src">MT Newswires</span><span class="mi-news-title">Exchange-Traded Funds Rise, Equity Futures Mixed Pre-Bell as Traders Assess Tech Earnings Amid Global Uncertainty</span><span class="mi-news-date"></span></a><a href="https://finance.yahoo.com/markets/commodities/articles/gold-now-strategic-mineral-mining-120000283.html" target="_blank" rel="noopener" class="mi-news-item"><span class="mi-news-src">Zacks</span><span class="mi-news-title">Gold Is Now a Strategic Mineral: Mining ETFs in Focus</span><span class="mi-news-date"></span></a></div>
 </div>
 
@@ -344,11 +357,11 @@ footer{position:relative;z-index:5;text-align:center;padding:20px;font-family:'F
   <div>
     <div style="font-size:9px;font-weight:700;color:#00e5a0;letter-spacing:.07em;
                 font-family:'Fira Code',monospace">FEAR &amp; GREED INDEX (CNN)</div>
-    <div style="font-size:20px;font-weight:700;color:#00e5a0;margin-top:2px">66 <span style="font-size:13px;color:#00e5a0cc">— Greed</span></div>
+    <div style="font-size:20px;font-weight:700;color:#00e5a0;margin-top:2px">65 <span style="font-size:13px;color:#00e5a0cc">— Greed</span></div>
   </div>
   <div style="flex:1;max-width:220px">
     <div style="background:#1c2333;border-radius:4px;height:8px;overflow:hidden">
-      <div style="width:66%;height:100%;background:linear-gradient(90deg,#ff4d6d,#ffd60a,#00e5a0,#c084fc);border-radius:4px"></div>
+      <div style="width:65%;height:100%;background:linear-gradient(90deg,#ff4d6d,#ffd60a,#00e5a0,#c084fc);border-radius:4px"></div>
     </div>
     <div style="display:flex;justify-content:space-between;font-size:8px;color:#5a6a84;margin-top:3px">
       <span>Miedo extremo</span><span>Neutral</span><span>Codicia extrema</span>
@@ -381,8 +394,192 @@ footer{position:relative;z-index:5;text-align:center;padding:20px;font-family:'F
       <div class="tp-label">MEJOR COMPRA — PRÓXIMOS 10 DÍAS</div>
       <div class="tp-subtitle">Análisis comparativo de los #1 de cada universo</div>
     </div>
-    <div class="tp-badge-univ">Top 80</div>
+    <div style="display:flex;align-items:center;gap:8px;margin-left:auto">
+      <div class="tp-badge-univ">Top 80</div>
+      <button class="tp-hist-btn" onclick="(function(){var p=document.getElementById('bt-panel');p.style.display=p.style.display==='none'?'block':'none';})()">📊 Historial</button>
+    </div>
   </div>
+  <div id="bt-panel" style="display:none;padding:12px 16px;border-top:1px solid rgba(255,214,10,.15)"><div class="bt-grid">
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-24 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 135</div>
+    <div class="bt-ret"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Pendiente</span></div>
+  </div>
+  <div class="bt-chart"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Sin datos aún</span></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-24 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 135</div>
+    <div class="bt-ret"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Pendiente</span></div>
+  </div>
+  <div class="bt-chart"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Sin datos aún</span></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-24 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 142</div>
+    <div class="bt-ret"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Pendiente</span></div>
+  </div>
+  <div class="bt-chart"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Sin datos aún</span></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-24 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 138</div>
+    <div class="bt-ret"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Pendiente</span></div>
+  </div>
+  <div class="bt-chart"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Sin datos aún</span></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-24 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 129</div>
+    <div class="bt-ret"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Pendiente</span></div>
+  </div>
+  <div class="bt-chart"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Sin datos aún</span></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-24 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 136</div>
+    <div class="bt-ret"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Pendiente</span></div>
+  </div>
+  <div class="bt-chart"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Sin datos aún</span></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-24 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 136</div>
+    <div class="bt-ret"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Pendiente</span></div>
+  </div>
+  <div class="bt-chart"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Sin datos aún</span></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">ROKU</div>
+    <div class="bt-name">Roku, Inc.</div>
+    <div class="bt-meta">04-24 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 134</div>
+    <div class="bt-ret"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Pendiente</span></div>
+  </div>
+  <div class="bt-chart"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Sin datos aún</span></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">ROKU</div>
+    <div class="bt-name">Roku, Inc.</div>
+    <div class="bt-meta">04-24 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 134</div>
+    <div class="bt-ret"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Pendiente</span></div>
+  </div>
+  <div class="bt-chart"><span style="font-size:9px;color:#4a5a70;font-family:'Fira Code',monospace">Sin datos aún</span></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">DAVE</div>
+    <div class="bt-name">Dave Inc.</div>
+    <div class="bt-meta">04-23 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 114</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#00e5a0;font-family:'Fira Code',monospace">+0.71%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(2d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,156.0" data-tips="["04-23: +0.00%", "04-24: +0.71%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btDAVE20260423" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00e5a0" stop-opacity="0.3"/><stop offset="100%" stop-color="#00e5a0" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,36.0 156.0,4.0 156.0,40 4.0,40" fill="url(#btDAVE20260423)"/><polyline points="4.0,36.0 156.0,4.0" fill="none" stroke="#00e5a0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="36.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-23: +0.00%</title></circle><circle cx="156.0" cy="4.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-24: +0.71%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">RMBS</div>
+    <div class="bt-name">Rambus, Inc.</div>
+    <div class="bt-meta">04-23 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 113</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#00e5a0;font-family:'Fira Code',monospace">+16.20%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(2d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,156.0" data-tips="["04-23: +0.00%", "04-24: +16.20%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btRMBS20260423" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00e5a0" stop-opacity="0.3"/><stop offset="100%" stop-color="#00e5a0" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,36.0 156.0,4.0 156.0,40 4.0,40" fill="url(#btRMBS20260423)"/><polyline points="4.0,36.0 156.0,4.0" fill="none" stroke="#00e5a0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="36.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-23: +0.00%</title></circle><circle cx="156.0" cy="4.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-24: +16.20%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-23 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 129</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#ff4d6d;font-family:'Fira Code',monospace">-0.94%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(2d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,156.0" data-tips="["04-23: +0.00%", "04-24: -0.94%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btMRVL20260423" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff4d6d" stop-opacity="0.3"/><stop offset="100%" stop-color="#ff4d6d" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,4.0 156.0,36.0 156.0,40 4.0,40" fill="url(#btMRVL20260423)"/><polyline points="4.0,4.0 156.0,36.0" fill="none" stroke="#ff4d6d" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="4.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-23: +0.00%</title></circle><circle cx="156.0" cy="36.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-24: -0.94%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-23 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 129</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#ff4d6d;font-family:'Fira Code',monospace">-0.94%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(2d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,156.0" data-tips="["04-23: +0.00%", "04-24: -0.94%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btMRVL20260423" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff4d6d" stop-opacity="0.3"/><stop offset="100%" stop-color="#ff4d6d" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,4.0 156.0,36.0 156.0,40 4.0,40" fill="url(#btMRVL20260423)"/><polyline points="4.0,4.0 156.0,36.0" fill="none" stroke="#ff4d6d" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="4.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-23: +0.00%</title></circle><circle cx="156.0" cy="36.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-24: -0.94%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-23 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 129</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#ff4d6d;font-family:'Fira Code',monospace">-0.94%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(2d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,156.0" data-tips="["04-23: +0.00%", "04-24: -0.94%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btMRVL20260423" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff4d6d" stop-opacity="0.3"/><stop offset="100%" stop-color="#ff4d6d" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,4.0 156.0,36.0 156.0,40 4.0,40" fill="url(#btMRVL20260423)"/><polyline points="4.0,4.0 156.0,36.0" fill="none" stroke="#ff4d6d" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="4.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-23: +0.00%</title></circle><circle cx="156.0" cy="36.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-24: -0.94%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MU</div>
+    <div class="bt-name">Micron Technology, Inc.</div>
+    <div class="bt-meta">04-23 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 135</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#00e5a0;font-family:'Fira Code',monospace">+3.18%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(2d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,156.0" data-tips="["04-23: +0.00%", "04-24: +3.18%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btMU20260423" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00e5a0" stop-opacity="0.3"/><stop offset="100%" stop-color="#00e5a0" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,36.0 156.0,4.0 156.0,40 4.0,40" fill="url(#btMU20260423)"/><polyline points="4.0,36.0 156.0,4.0" fill="none" stroke="#00e5a0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="36.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-23: +0.00%</title></circle><circle cx="156.0" cy="4.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-24: +3.18%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MU</div>
+    <div class="bt-name">Micron Technology, Inc.</div>
+    <div class="bt-meta">04-23 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 135</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#00e5a0;font-family:'Fira Code',monospace">+3.18%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(2d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,156.0" data-tips="["04-23: +0.00%", "04-24: +3.18%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btMU20260423" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00e5a0" stop-opacity="0.3"/><stop offset="100%" stop-color="#00e5a0" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,36.0 156.0,4.0 156.0,40 4.0,40" fill="url(#btMU20260423)"/><polyline points="4.0,36.0 156.0,4.0" fill="none" stroke="#00e5a0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="36.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-23: +0.00%</title></circle><circle cx="156.0" cy="4.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-24: +3.18%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">MRVL</div>
+    <div class="bt-name">Marvell Technology, Inc.</div>
+    <div class="bt-meta">04-23 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 138</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#ff4d6d;font-family:'Fira Code',monospace">-0.94%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(2d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,156.0" data-tips="["04-23: +0.00%", "04-24: -0.94%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btMRVL20260423" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff4d6d" stop-opacity="0.3"/><stop offset="100%" stop-color="#ff4d6d" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,4.0 156.0,36.0 156.0,40 4.0,40" fill="url(#btMRVL20260423)"/><polyline points="4.0,4.0 156.0,36.0" fill="none" stroke="#ff4d6d" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="4.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-23: +0.00%</title></circle><circle cx="156.0" cy="36.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-24: -0.94%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">DAVE</div>
+    <div class="bt-name">Dave Inc.</div>
+    <div class="bt-meta">04-22 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 106</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#ff4d6d;font-family:'Fira Code',monospace">-2.00%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(3d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,80.0,156.0" data-tips="["04-22: +0.00%", "04-23: -2.69%", "04-24: -2.00%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btDAVE20260422" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff4d6d" stop-opacity="0.3"/><stop offset="100%" stop-color="#ff4d6d" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,4.0 80.0,36.0 156.0,27.8 156.0,40 4.0,40" fill="url(#btDAVE20260422)"/><polyline points="4.0,4.0 80.0,36.0 156.0,27.8" fill="none" stroke="#ff4d6d" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="4.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-22: +0.00%</title></circle><circle cx="80.0" cy="36.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-23: -2.69%</title></circle><circle cx="156.0" cy="27.8" r="3" fill="#ff4d6d" opacity="0.9"><title>04-24: -2.00%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">DAVE</div>
+    <div class="bt-name">Dave Inc.</div>
+    <div class="bt-meta">04-22 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 107</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#ff4d6d;font-family:'Fira Code',monospace">-2.00%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(3d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,80.0,156.0" data-tips="["04-22: +0.00%", "04-23: -2.69%", "04-24: -2.00%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btDAVE20260422" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff4d6d" stop-opacity="0.3"/><stop offset="100%" stop-color="#ff4d6d" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,4.0 80.0,36.0 156.0,27.8 156.0,40 4.0,40" fill="url(#btDAVE20260422)"/><polyline points="4.0,4.0 80.0,36.0 156.0,27.8" fill="none" stroke="#ff4d6d" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="4.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-22: +0.00%</title></circle><circle cx="80.0" cy="36.0" r="3" fill="#ff4d6d" opacity="0.9"><title>04-23: -2.69%</title></circle><circle cx="156.0" cy="27.8" r="3" fill="#ff4d6d" opacity="0.9"><title>04-24: -2.00%</title></circle></svg></div>
+</div>
+<div class="bt-card">
+  <div class="bt-card-left">
+    <div class="bt-sym">AMD</div>
+    <div class="bt-name">Advanced Micro Devices, Inc.</div>
+    <div class="bt-meta">04-22 &nbsp;·&nbsp; entrada N/D &nbsp;·&nbsp; score 118</div>
+    <div class="bt-ret"><span style="font-size:13px;font-weight:700;color:#00e5a0;font-family:'Fira Code',monospace">+14.60%</span><span style="font-size:8px;color:#4a5a70;margin-left:3px;font-family:'Fira Code',monospace">(3d)</span></div>
+  </div>
+  <div class="bt-chart"><svg width="160" height="40" viewBox="0 0 160 40" class="spk-touch" data-pts="4.0,80.0,156.0" data-tips="["04-22: +0.00%", "04-23: +0.62%", "04-24: +14.60%"]" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><defs><linearGradient id="btAMD20260422" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00e5a0" stop-opacity="0.3"/><stop offset="100%" stop-color="#00e5a0" stop-opacity="0.02"/></linearGradient></defs><rect x="0" y="0" width="160" height="40" fill="transparent" pointer-events="all"/><polygon points="4.0,36.0 80.0,34.6 156.0,4.0 156.0,40 4.0,40" fill="url(#btAMD20260422)"/><polyline points="4.0,36.0 80.0,34.6 156.0,4.0" fill="none" stroke="#00e5a0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="4.0" cy="36.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-22: +0.00%</title></circle><circle cx="80.0" cy="34.6" r="3" fill="#00e5a0" opacity="0.9"><title>04-23: +0.62%</title></circle><circle cx="156.0" cy="4.0" r="3" fill="#00e5a0" opacity="0.9"><title>04-24: +14.60%</title></circle></svg></div>
+</div></div></div>
   <div class="tp-body">
     <div class="tp-left">
       <div class="tp-ticker" style="color:#00e5a0">ROKU</div>
@@ -617,7 +814,7 @@ footer{position:relative;z-index:5;text-align:center;padding:20px;font-family:'F
       <span class='metric muted' data-tip='Capitalización bursátil: precio × nº de acciones. Indica el tamaño total de mercado de la empresa.'>$5.1T</span>
       <span class='metric' data-tip='RSI (Relative Strength Index, 14 días): mide la velocidad del precio. &lt;30 = sobrevendido (posible rebote), &gt;70 = sobrecomprado (posible corrección). 40-60 = zona neutra.'>RSI 71.71</span>
       <span class='metric' style='color:#8899aa' data-tip='Ratio de volumen hoy vs media de 20 días. x2 = el doble del volumen habitual. Volumen alto confirma movimientos de precio y reduce el riesgo de falsa ruptura.'>Vol x1.1</span>
-      <span class='metric' style='color:#00e5a0' data-tip='RS Rating (Relative Strength vs S&P500): ratio de rentabilidad relativa a 12 meses. x1.5 = 50% mejor que el índice. ⭐ &gt;x2.5 = fuerza relativa excepcional (O&apos;Neil style).'>RS x2.1</span>
+      <span class='metric' style='color:#00e5a0' data-tip='RS Rating (Relative Strength vs S&P500): ratio de rentabilidad relativa a 12 meses. x1.5 = 50% mejor que el índice. ⭐ &gt;x2.5 = fuerza relativa excepcional (O&apos;Neil style).'>RS x2.0</span>
       <span class='metric' style='color:#ff7043' data-tip='Beta: volatilidad relativa al mercado. β1.0 = igual que el S&P500, β2.0 = se mueve el doble. Mayor beta implica mayor riesgo y mayor potencial de ganancia/pérdida.'>β 2.3</span>
       <span class='metric' style='color:#00e5a0' data-tip='Posiciones cortas como % del float. &gt;20% con precio subiendo = posible short squeeze. &lt;5% = presión bajista mínima. ⚠ &gt;20% puede amplificar caídas.'>✅ Corto 1.2%</span>
       <span class='metric' style='color:#00e5a0' data-tip='EMA200: media móvil exponencial de 200 días. Verde = precio y EMA50 sobre EMA200 (tendencia alcista secular, zona óptima). Amarillo = sobre EMA200 pero EMA50 cruzando. Rojo = bajo EMA200 (mercado bajista estructural).'>EMA200 ↑ +18.3%</span>
@@ -747,7 +944,7 @@ footer{position:relative;z-index:5;text-align:center;padding:20px;font-family:'F
     </div>
     <div class='co-desc'>Hims & Hers Health, Inc. operates as a consumer-first health and wellness platform that connects consumers to licensed healthcare professionals in the United States, the United …</div>
     <div class='sparkline-row' data-tip='Evolución del precio en los últimos 20 días. Verde = subió vs hace 20d, rojo = bajó. Pasa el cursor por la línea para ver OHLCV de cada día.'><svg width="100%" height="38" viewBox="0 0 280 38" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class='spk-touch' data-pts='4.0,18.32,32.63,46.95,61.26,75.58,89.89,104.21,118.53,132.84,147.16,161.47,175.79,190.11,204.42,218.74,233.05,247.37,261.68,276.0' data-tips='["2026-03-27  |  O:20.58  H:20.6  L:19.18  C:19.38 (-5.83%)  |  Vol: 22.37M  ·  Media: 32.78M  (x0.68)", "2026-03-30  |  O:19.35  H:19.67  L:18.62  C:18.78 (-3.1%)  |  Vol: 19.22M  ·  Media: 32.78M  (x0.59)", "2026-03-31  |  O:18.78  H:21.0  L:18.64  C:20.76 (+10.54%)  |  Vol: 34.53M  ·  Media: 32.78M  (x1.05)", "2026-04-01  |  O:21.0  H:21.62  L:19.7  C:19.84 (-4.43%)  |  Vol: 26.63M  ·  Media: 32.78M  (x0.81)", "2026-04-02  |  O:19.31  H:19.5  L:18.75  C:19.14 (-3.53%)  |  Vol: 23.51M  ·  Media: 32.78M  (x0.72)", "2026-04-06  |  O:19.78  H:20.37  L:19.51  C:20.33 (+6.22%)  |  Vol: 19.58M  ·  Media: 32.78M  (x0.6)", "2026-04-07  |  O:19.97  H:20.0  L:18.96  C:19.5 (-4.08%)  |  Vol: 21.49M  ·  Media: 32.78M  (x0.66)", "2026-04-08  |  O:20.8  H:20.95  L:19.04  C:19.39 (-0.56%)  |  Vol: 20.08M  ·  Media: 32.78M  (x0.61)", "2026-04-09  |  O:19.31  H:19.77  L:18.96  C:19.75 (+1.86%)  |  Vol: 14.70M  ·  Media: 32.78M  (x0.45)", "2026-04-10  |  O:19.95  H:20.15  L:19.18  C:19.43 (-1.62%)  |  Vol: 16.05M  ·  Media: 32.78M  (x0.49)", "2026-04-13  |  O:19.33  H:21.8  L:19.3  C:21.15 (+8.85%)  |  Vol: 24.69M  ·  Media: 32.78M  (x0.75)", "2026-04-14  |  O:21.75  H:21.96  L:20.92  C:21.36 (+0.99%)  |  Vol: 19.38M  ·  Media: 32.78M  (x0.59)", "2026-04-15  |  O:21.72  H:24.69  L:21.28  C:24.29 (+13.72%)  |  Vol: 45.78M  ·  Media: 32.78M  (x1.4)", "2026-04-16  |  O:26.15  H:27.81  L:24.76  C:26.99 (+11.12%)  |  Vol: 80.36M  ·  Media: 32.78M  (x2.45)", "2026-04-17  |  O:27.67  H:29.78  L:27.4  C:28.82 (+6.78%)  |  Vol: 58.93M  ·  Media: 32.78M  (x1.8)", "2026-04-20  |  O:28.53  H:31.85  L:28.41  C:31.01 (+7.6%)  |  Vol: 69.29M  ·  Media: 32.78M  (x2.11)", "2026-04-21  |  O:28.58  H:30.87  L:27.85  C:29.76 (-4.03%)  |  Vol: 59.04M  ·  Media: 32.78M  (x1.8)", "2026-04-22  |  O:30.0  H:30.05  L:28.05  C:29.01 (-2.52%)  |  Vol: 32.25M  ·  Media: 32.78M  (x0.98)", "2026-04-23  |  O:30.33  H:31.44  L:27.03  C:28.15 (-2.96%)  |  Vol: 44.78M  ·  Media: 32.78M  (x1.37)", "2026-04-24  |  O:29.5  H:31.33  L:28.9  C:30.74 (+9.2%)  |  Vol: 33.49M  ·  Media: 32.78M  (x1.02)"]'><defs><linearGradient id="spkgHIMS" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00e5a0" stop-opacity="0.3"/><stop offset="100%" stop-color="#00e5a0" stop-opacity="0.02"/></linearGradient></defs><polygon points="4.0,32.53 18.32,34.0 32.63,29.14 46.95,31.4 61.26,33.12 75.58,30.2 89.89,32.23 104.21,32.5 118.53,31.62 132.84,32.41 147.16,28.19 161.47,27.67 175.79,20.48 190.11,13.86 204.42,9.37 218.74,4.0 233.05,7.07 247.37,8.91 261.68,11.02 276.0,4.67 276.0,38 4.0,38" fill="url(#spkgHIMS)"/><polyline points="4.0,32.53 18.32,34.0 32.63,29.14 46.95,31.4 61.26,33.12 75.58,30.2 89.89,32.23 104.21,32.5 118.53,31.62 132.84,32.41 147.16,28.19 161.47,27.67 175.79,20.48 190.11,13.86 204.42,9.37 218.74,4.0 233.05,7.07 247.37,8.91 261.68,11.02 276.0,4.67" fill="none" stroke="#00e5a0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="276.0" cy="4.67" r="3" fill="#00e5a0"/><circle cx="4.0" cy="32.53" r="9" fill="transparent" stroke="none"><title>2026-03-27  |  O:20.58  H:20.6  L:19.18  C:19.38 (-5.83%)  |  Vol: 22.37M  ·  Media: 32.78M  (x0.68)</title></circle><circle cx="18.32" cy="34.0" r="9" fill="transparent" stroke="none"><title>2026-03-30  |  O:19.35  H:19.67  L:18.62  C:18.78 (-3.1%)  |  Vol: 19.22M  ·  Media: 32.78M  (x0.59)</title></circle><circle cx="32.63" cy="29.14" r="9" fill="transparent" stroke="none"><title>2026-03-31  |  O:18.78  H:21.0  L:18.64  C:20.76 (+10.54%)  |  Vol: 34.53M  ·  Media: 32.78M  (x1.05)</title></circle><circle cx="46.95" cy="31.4" r="9" fill="transparent" stroke="none"><title>2026-04-01  |  O:21.0  H:21.62  L:19.7  C:19.84 (-4.43%)  |  Vol: 26.63M  ·  Media: 32.78M  (x0.81)</title></circle><circle cx="61.26" cy="33.12" r="9" fill="transparent" stroke="none"><title>2026-04-02  |  O:19.31  H:19.5  L:18.75  C:19.14 (-3.53%)  |  Vol: 23.51M  ·  Media: 32.78M  (x0.72)</title></circle><circle cx="75.58" cy="30.2" r="9" fill="transparent" stroke="none"><title>2026-04-06  |  O:19.78  H:20.37  L:19.51  C:20.33 (+6.22%)  |  Vol: 19.58M  ·  Media: 32.78M  (x0.6)</title></circle><circle cx="89.89" cy="32.23" r="9" fill="transparent" stroke="none"><title>2026-04-07  |  O:19.97  H:20.0  L:18.96  C:19.5 (-4.08%)  |  Vol: 21.49M  ·  Media: 32.78M  (x0.66)</title></circle><circle cx="104.21" cy="32.5" r="9" fill="transparent" stroke="none"><title>2026-04-08  |  O:20.8  H:20.95  L:19.04  C:19.39 (-0.56%)  |  Vol: 20.08M  ·  Media: 32.78M  (x0.61)</title></circle><circle cx="118.53" cy="31.62" r="9" fill="transparent" stroke="none"><title>2026-04-09  |  O:19.31  H:19.77  L:18.96  C:19.75 (+1.86%)  |  Vol: 14.70M  ·  Media: 32.78M  (x0.45)</title></circle><circle cx="132.84" cy="32.41" r="9" fill="transparent" stroke="none"><title>2026-04-10  |  O:19.95  H:20.15  L:19.18  C:19.43 (-1.62%)  |  Vol: 16.05M  ·  Media: 32.78M  (x0.49)</title></circle><circle cx="147.16" cy="28.19" r="9" fill="transparent" stroke="none"><title>2026-04-13  |  O:19.33  H:21.8  L:19.3  C:21.15 (+8.85%)  |  Vol: 24.69M  ·  Media: 32.78M  (x0.75)</title></circle><circle cx="161.47" cy="27.67" r="9" fill="transparent" stroke="none"><title>2026-04-14  |  O:21.75  H:21.96  L:20.92  C:21.36 (+0.99%)  |  Vol: 19.38M  ·  Media: 32.78M  (x0.59)</title></circle><circle cx="175.79" cy="20.48" r="9" fill="transparent" stroke="none"><title>2026-04-15  |  O:21.72  H:24.69  L:21.28  C:24.29 (+13.72%)  |  Vol: 45.78M  ·  Media: 32.78M  (x1.4)</title></circle><circle cx="190.11" cy="13.86" r="9" fill="transparent" stroke="none"><title>2026-04-16  |  O:26.15  H:27.81  L:24.76  C:26.99 (+11.12%)  |  Vol: 80.36M  ·  Media: 32.78M  (x2.45)</title></circle><circle cx="204.42" cy="9.37" r="9" fill="transparent" stroke="none"><title>2026-04-17  |  O:27.67  H:29.78  L:27.4  C:28.82 (+6.78%)  |  Vol: 58.93M  ·  Media: 32.78M  (x1.8)</title></circle><circle cx="218.74" cy="4.0" r="9" fill="transparent" stroke="none"><title>2026-04-20  |  O:28.53  H:31.85  L:28.41  C:31.01 (+7.6%)  |  Vol: 69.29M  ·  Media: 32.78M  (x2.11)</title></circle><circle cx="233.05" cy="7.07" r="9" fill="transparent" stroke="none"><title>2026-04-21  |  O:28.58  H:30.87  L:27.85  C:29.76 (-4.03%)  |  Vol: 59.04M  ·  Media: 32.78M  (x1.8)</title></circle><circle cx="247.37" cy="8.91" r="9" fill="transparent" stroke="none"><title>2026-04-22  |  O:30.0  H:30.05  L:28.05  C:29.01 (-2.52%)  |  Vol: 32.25M  ·  Media: 32.78M  (x0.98)</title></circle><circle cx="261.68" cy="11.02" r="9" fill="transparent" stroke="none"><title>2026-04-23  |  O:30.33  H:31.44  L:27.03  C:28.15 (-2.96%)  |  Vol: 44.78M  ·  Media: 32.78M  (x1.37)</title></circle><circle cx="276.0" cy="4.67" r="9" fill="transparent" stroke="none"><title>2026-04-24  |  O:29.5  H:31.33  L:28.9  C:30.74 (+9.2%)  |  Vol: 33.49M  ·  Media: 32.78M  (x1.02)</title></circle></svg></div>
-    <div class="tags-row"><span class="tag" data-tip="Cambio de precio positivo en el día de hoy. Indica momentum alcista intradía.">🚀 +9.2%</span> <span class="tag" data-tip="P/E (Price/Earnings): relación precio-beneficio. <15 valor, >30 caro. Este P/E bajo indica que el mercado aún no ha puesto en precio el potencial de la empresa.">P/E 22</span> <span class="tag" data-tip="Crecimiento de ingresos interanual. Cifra elevada indica que la empresa está ganando cuota de mercado de forma acelerada.">Rev +28%</span> <span class="tag" data-tip="Ratio volumen medio 5 días vs media 20 días. x1.8 o superior indica interés institucional: el dinero grande está entrando.">📊 Vol5d x1.6</span> <span class="tag" data-tip="Short Squeeze: >20% del float en corto + precio subiendo. Los vendedores en corto se ven forzados a cubrir su posición comprando, amplificando la subida.">🔥 Short Squeeze 39%</span> <span class="tag" data-tip="Relative Strength vs S&P500: ratio de rentabilidad a 12 meses. x2.0 = la acción ha ganado el doble que el índice. Señal de liderazgo de mercado.">⭐ RS x4.5</span> <span class="tag" data-tip="Cambio de precio positivo en el día de hoy. Indica momentum alcista intradía.">🏆 +49% vs sector</span></div>
+    <div class="tags-row"><span class="tag" data-tip="Cambio de precio positivo en el día de hoy. Indica momentum alcista intradía.">🚀 +9.2%</span> <span class="tag" data-tip="P/E (Price/Earnings): relación precio-beneficio. <15 valor, >30 caro. Este P/E bajo indica que el mercado aún no ha puesto en precio el potencial de la empresa.">P/E 22</span> <span class="tag" data-tip="Crecimiento de ingresos interanual. Cifra elevada indica que la empresa está ganando cuota de mercado de forma acelerada.">Rev +28%</span> <span class="tag" data-tip="Ratio volumen medio 5 días vs media 20 días. x1.8 o superior indica interés institucional: el dinero grande está entrando.">📊 Vol5d x1.6</span> <span class="tag" data-tip="Short Squeeze: >20% del float en corto + precio subiendo. Los vendedores en corto se ven forzados a cubrir su posición comprando, amplificando la subida.">🔥 Short Squeeze 39%</span> <span class="tag" data-tip="Relative Strength vs S&P500: ratio de rentabilidad a 12 meses. x2.0 = la acción ha ganado el doble que el índice. Señal de liderazgo de mercado.">⭐ RS x4.5</span> <span class="tag" data-tip="Cambio de precio positivo en el día de hoy. Indica momentum alcista intradía.">🏆 +48% vs sector</span></div>
     <div class="score-row">
       <div class="score-num" style="color:#ffd60a" title="Score: 101/220 pts · ✅ mercado alcista" data-tip="Score: 101/220 pts · ✅ mercado alcista">101</div>
       <div class="score-bar-wrap"><div class="score-bar" style="width:46%;background:#00e5a0"></div></div>
@@ -819,7 +1016,7 @@ footer{position:relative;z-index:5;text-align:center;padding:20px;font-family:'F
     </div>
     <div class='co-desc'>Hims & Hers Health, Inc. operates as a consumer-first health and wellness platform that connects consumers to licensed healthcare professionals in the United States, the United …</div>
     <div class='sparkline-row' data-tip='Evolución del precio en los últimos 20 días. Verde = subió vs hace 20d, rojo = bajó. Pasa el cursor por la línea para ver OHLCV de cada día.'><svg width="100%" height="38" viewBox="0 0 280 38" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class='spk-touch' data-pts='4.0,18.32,32.63,46.95,61.26,75.58,89.89,104.21,118.53,132.84,147.16,161.47,175.79,190.11,204.42,218.74,233.05,247.37,261.68,276.0' data-tips='["2026-03-27  |  O:20.58  H:20.6  L:19.18  C:19.38 (-5.83%)  |  Vol: 22.37M  ·  Media: 32.78M  (x0.68)", "2026-03-30  |  O:19.35  H:19.67  L:18.62  C:18.78 (-3.1%)  |  Vol: 19.22M  ·  Media: 32.78M  (x0.59)", "2026-03-31  |  O:18.78  H:21.0  L:18.64  C:20.76 (+10.54%)  |  Vol: 34.53M  ·  Media: 32.78M  (x1.05)", "2026-04-01  |  O:21.0  H:21.62  L:19.7  C:19.84 (-4.43%)  |  Vol: 26.63M  ·  Media: 32.78M  (x0.81)", "2026-04-02  |  O:19.31  H:19.5  L:18.75  C:19.14 (-3.53%)  |  Vol: 23.51M  ·  Media: 32.78M  (x0.72)", "2026-04-06  |  O:19.78  H:20.37  L:19.51  C:20.33 (+6.22%)  |  Vol: 19.58M  ·  Media: 32.78M  (x0.6)", "2026-04-07  |  O:19.97  H:20.0  L:18.96  C:19.5 (-4.08%)  |  Vol: 21.49M  ·  Media: 32.78M  (x0.66)", "2026-04-08  |  O:20.8  H:20.95  L:19.04  C:19.39 (-0.56%)  |  Vol: 20.08M  ·  Media: 32.78M  (x0.61)", "2026-04-09  |  O:19.31  H:19.77  L:18.96  C:19.75 (+1.86%)  |  Vol: 14.70M  ·  Media: 32.78M  (x0.45)", "2026-04-10  |  O:19.95  H:20.15  L:19.18  C:19.43 (-1.62%)  |  Vol: 16.05M  ·  Media: 32.78M  (x0.49)", "2026-04-13  |  O:19.33  H:21.8  L:19.3  C:21.15 (+8.85%)  |  Vol: 24.69M  ·  Media: 32.78M  (x0.75)", "2026-04-14  |  O:21.75  H:21.96  L:20.92  C:21.36 (+0.99%)  |  Vol: 19.38M  ·  Media: 32.78M  (x0.59)", "2026-04-15  |  O:21.72  H:24.69  L:21.28  C:24.29 (+13.72%)  |  Vol: 45.78M  ·  Media: 32.78M  (x1.4)", "2026-04-16  |  O:26.15  H:27.81  L:24.76  C:26.99 (+11.12%)  |  Vol: 80.36M  ·  Media: 32.78M  (x2.45)", "2026-04-17  |  O:27.67  H:29.78  L:27.4  C:28.82 (+6.78%)  |  Vol: 58.93M  ·  Media: 32.78M  (x1.8)", "2026-04-20  |  O:28.53  H:31.85  L:28.41  C:31.01 (+7.6%)  |  Vol: 69.29M  ·  Media: 32.78M  (x2.11)", "2026-04-21  |  O:28.58  H:30.87  L:27.85  C:29.76 (-4.03%)  |  Vol: 59.04M  ·  Media: 32.78M  (x1.8)", "2026-04-22  |  O:30.0  H:30.05  L:28.05  C:29.01 (-2.52%)  |  Vol: 32.25M  ·  Media: 32.78M  (x0.98)", "2026-04-23  |  O:30.33  H:31.44  L:27.03  C:28.15 (-2.96%)  |  Vol: 44.78M  ·  Media: 32.78M  (x1.37)", "2026-04-24  |  O:29.5  H:31.33  L:28.9  C:30.74 (+9.2%)  |  Vol: 33.49M  ·  Media: 32.78M  (x1.02)"]'><defs><linearGradient id="spkgHIMS" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00e5a0" stop-opacity="0.3"/><stop offset="100%" stop-color="#00e5a0" stop-opacity="0.02"/></linearGradient></defs><polygon points="4.0,32.53 18.32,34.0 32.63,29.14 46.95,31.4 61.26,33.12 75.58,30.2 89.89,32.23 104.21,32.5 118.53,31.62 132.84,32.41 147.16,28.19 161.47,27.67 175.79,20.48 190.11,13.86 204.42,9.37 218.74,4.0 233.05,7.07 247.37,8.91 261.68,11.02 276.0,4.67 276.0,38 4.0,38" fill="url(#spkgHIMS)"/><polyline points="4.0,32.53 18.32,34.0 32.63,29.14 46.95,31.4 61.26,33.12 75.58,30.2 89.89,32.23 104.21,32.5 118.53,31.62 132.84,32.41 147.16,28.19 161.47,27.67 175.79,20.48 190.11,13.86 204.42,9.37 218.74,4.0 233.05,7.07 247.37,8.91 261.68,11.02 276.0,4.67" fill="none" stroke="#00e5a0" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/><circle cx="276.0" cy="4.67" r="3" fill="#00e5a0"/><circle cx="4.0" cy="32.53" r="9" fill="transparent" stroke="none"><title>2026-03-27  |  O:20.58  H:20.6  L:19.18  C:19.38 (-5.83%)  |  Vol: 22.37M  ·  Media: 32.78M  (x0.68)</title></circle><circle cx="18.32" cy="34.0" r="9" fill="transparent" stroke="none"><title>2026-03-30  |  O:19.35  H:19.67  L:18.62  C:18.78 (-3.1%)  |  Vol: 19.22M  ·  Media: 32.78M  (x0.59)</title></circle><circle cx="32.63" cy="29.14" r="9" fill="transparent" stroke="none"><title>2026-03-31  |  O:18.78  H:21.0  L:18.64  C:20.76 (+10.54%)  |  Vol: 34.53M  ·  Media: 32.78M  (x1.05)</title></circle><circle cx="46.95" cy="31.4" r="9" fill="transparent" stroke="none"><title>2026-04-01  |  O:21.0  H:21.62  L:19.7  C:19.84 (-4.43%)  |  Vol: 26.63M  ·  Media: 32.78M  (x0.81)</title></circle><circle cx="61.26" cy="33.12" r="9" fill="transparent" stroke="none"><title>2026-04-02  |  O:19.31  H:19.5  L:18.75  C:19.14 (-3.53%)  |  Vol: 23.51M  ·  Media: 32.78M  (x0.72)</title></circle><circle cx="75.58" cy="30.2" r="9" fill="transparent" stroke="none"><title>2026-04-06  |  O:19.78  H:20.37  L:19.51  C:20.33 (+6.22%)  |  Vol: 19.58M  ·  Media: 32.78M  (x0.6)</title></circle><circle cx="89.89" cy="32.23" r="9" fill="transparent" stroke="none"><title>2026-04-07  |  O:19.97  H:20.0  L:18.96  C:19.5 (-4.08%)  |  Vol: 21.49M  ·  Media: 32.78M  (x0.66)</title></circle><circle cx="104.21" cy="32.5" r="9" fill="transparent" stroke="none"><title>2026-04-08  |  O:20.8  H:20.95  L:19.04  C:19.39 (-0.56%)  |  Vol: 20.08M  ·  Media: 32.78M  (x0.61)</title></circle><circle cx="118.53" cy="31.62" r="9" fill="transparent" stroke="none"><title>2026-04-09  |  O:19.31  H:19.77  L:18.96  C:19.75 (+1.86%)  |  Vol: 14.70M  ·  Media: 32.78M  (x0.45)</title></circle><circle cx="132.84" cy="32.41" r="9" fill="transparent" stroke="none"><title>2026-04-10  |  O:19.95  H:20.15  L:19.18  C:19.43 (-1.62%)  |  Vol: 16.05M  ·  Media: 32.78M  (x0.49)</title></circle><circle cx="147.16" cy="28.19" r="9" fill="transparent" stroke="none"><title>2026-04-13  |  O:19.33  H:21.8  L:19.3  C:21.15 (+8.85%)  |  Vol: 24.69M  ·  Media: 32.78M  (x0.75)</title></circle><circle cx="161.47" cy="27.67" r="9" fill="transparent" stroke="none"><title>2026-04-14  |  O:21.75  H:21.96  L:20.92  C:21.36 (+0.99%)  |  Vol: 19.38M  ·  Media: 32.78M  (x0.59)</title></circle><circle cx="175.79" cy="20.48" r="9" fill="transparent" stroke="none"><title>2026-04-15  |  O:21.72  H:24.69  L:21.28  C:24.29 (+13.72%)  |  Vol: 45.78M  ·  Media: 32.78M  (x1.4)</title></circle><circle cx="190.11" cy="13.86" r="9" fill="transparent" stroke="none"><title>2026-04-16  |  O:26.15  H:27.81  L:24.76  C:26.99 (+11.12%)  |  Vol: 80.36M  ·  Media: 32.78M  (x2.45)</title></circle><circle cx="204.42" cy="9.37" r="9" fill="transparent" stroke="none"><title>2026-04-17  |  O:27.67  H:29.78  L:27.4  C:28.82 (+6.78%)  |  Vol: 58.93M  ·  Media: 32.78M  (x1.8)</title></circle><circle cx="218.74" cy="4.0" r="9" fill="transparent" stroke="none"><title>2026-04-20  |  O:28.53  H:31.85  L:28.41  C:31.01 (+7.6%)  |  Vol: 69.29M  ·  Media: 32.78M  (x2.11)</title></circle><circle cx="233.05" cy="7.07" r="9" fill="transparent" stroke="none"><title>2026-04-21  |  O:28.58  H:30.87  L:27.85  C:29.76 (-4.03%)  |  Vol: 59.04M  ·  Media: 32.78M  (x1.8)</title></circle><circle cx="247.37" cy="8.91" r="9" fill="transparent" stroke="none"><title>2026-04-22  |  O:30.0  H:30.05  L:28.05  C:29.01 (-2.52%)  |  Vol: 32.25M  ·  Media: 32.78M  (x0.98)</title></circle><circle cx="261.68" cy="11.02" r="9" fill="transparent" stroke="none"><title>2026-04-23  |  O:30.33  H:31.44  L:27.03  C:28.15 (-2.96%)  |  Vol: 44.78M  ·  Media: 32.78M  (x1.37)</title></circle><circle cx="276.0" cy="4.67" r="9" fill="transparent" stroke="none"><title>2026-04-24  |  O:29.5  H:31.33  L:28.9  C:30.74 (+9.2%)  |  Vol: 33.49M  ·  Media: 32.78M  (x1.02)</title></circle></svg></div>
-    <div class="tags-row"><span class="tag" data-tip="Cambio de precio positivo en el día de hoy. Indica momentum alcista intradía.">🚀 +9.2%</span> <span class="tag" data-tip="P/E (Price/Earnings): relación precio-beneficio. <15 valor, >30 caro. Este P/E bajo indica que el mercado aún no ha puesto en precio el potencial de la empresa.">P/E 22</span> <span class="tag" data-tip="Crecimiento de ingresos interanual. Cifra elevada indica que la empresa está ganando cuota de mercado de forma acelerada.">Rev +28%</span> <span class="tag" data-tip="Ratio volumen medio 5 días vs media 20 días. x1.8 o superior indica interés institucional: el dinero grande está entrando.">📊 Vol5d x1.6</span> <span class="tag" data-tip="Short Squeeze: >20% del float en corto + precio subiendo. Los vendedores en corto se ven forzados a cubrir su posición comprando, amplificando la subida.">🔥 Short Squeeze 39%</span> <span class="tag" data-tip="Relative Strength vs S&P500: ratio de rentabilidad a 12 meses. x2.0 = la acción ha ganado el doble que el índice. Señal de liderazgo de mercado.">⭐ RS x4.5</span> <span class="tag" data-tip="Cambio de precio positivo en el día de hoy. Indica momentum alcista intradía.">🏆 +49% vs sector</span></div>
+    <div class="tags-row"><span class="tag" data-tip="Cambio de precio positivo en el día de hoy. Indica momentum alcista intradía.">🚀 +9.2%</span> <span class="tag" data-tip="P/E (Price/Earnings): relación precio-beneficio. <15 valor, >30 caro. Este P/E bajo indica que el mercado aún no ha puesto en precio el potencial de la empresa.">P/E 22</span> <span class="tag" data-tip="Crecimiento de ingresos interanual. Cifra elevada indica que la empresa está ganando cuota de mercado de forma acelerada.">Rev +28%</span> <span class="tag" data-tip="Ratio volumen medio 5 días vs media 20 días. x1.8 o superior indica interés institucional: el dinero grande está entrando.">📊 Vol5d x1.6</span> <span class="tag" data-tip="Short Squeeze: >20% del float en corto + precio subiendo. Los vendedores en corto se ven forzados a cubrir su posición comprando, amplificando la subida.">🔥 Short Squeeze 39%</span> <span class="tag" data-tip="Relative Strength vs S&P500: ratio de rentabilidad a 12 meses. x2.0 = la acción ha ganado el doble que el índice. Señal de liderazgo de mercado.">⭐ RS x4.5</span> <span class="tag" data-tip="Cambio de precio positivo en el día de hoy. Indica momentum alcista intradía.">🏆 +48% vs sector</span></div>
     <div class="score-row">
       <div class="score-num" style="color:#ffd60a" title="Score: 101/220 pts · ✅ mercado alcista" data-tip="Score: 101/220 pts · ✅ mercado alcista">101</div>
       <div class="score-bar-wrap"><div class="score-bar" style="width:46%;background:#00e5a0"></div></div>
@@ -1508,7 +1705,7 @@ footer{position:relative;z-index:5;text-align:center;padding:20px;font-family:'F
 
 
 <footer>
-  NASDAQ Scout PRO · Python + Yahoo Finance + Groq LLaMA 3.3 · 24/04/2026 20:26
+  NASDAQ Scout PRO · Python + Yahoo Finance + Groq LLaMA 3.3 · 24/04/2026 20:41
 </footer>
 
 <!-- ════════════════════════════════
